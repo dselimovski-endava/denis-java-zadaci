@@ -28,19 +28,13 @@ public class ParniBrojevi {
 		System.out.print("Molimo unesite broj 'b': ");		
 		b = unosBroja();
 		
-		if(a < b) {
+		if(a <= b) {
 			System.out.print("Parni brojevi su: ");
 			while(a <= b) {
 				if(a % 2 == 0)
 					System.out.print(a + " ");
 				a++;
 			}
-		}
-		else if(a == b) {
-			if(a % 2 ==0)
-				System.out.println("Paran broj je: " + a);
-			else
-				System.out.println("Nema parnih brojeva...");
 		}
 		else {
 			System.out.print("Parni brojevi su: ");
@@ -50,6 +44,8 @@ public class ParniBrojevi {
 				b++;
 			}
 		}
+		
+		ulaz.close();
 		
 	}
 	
