@@ -1,5 +1,18 @@
 package Zadatak2;
 
+/**
+ * @author Denis.Selimovski
+ *
+ */
+
+/**
+ * Napisati program koji ce predstavljati jednostavan digitron. Program treba da radi tako sto
+ * korisnik unese dva cela broja, zatim kod operacije koji zeli da izvrsi ('s' - sabiranje, 'o' -
+ * oduzimanje, 'm' - mnozenje, 'd' - deljenje). Kao rezultat se ocekuje ispisivanje rezultata
+ * te operacije nad unetim operandima.
+ *
+ */
+
 import java.util.Scanner;
 
 public class Digitron {

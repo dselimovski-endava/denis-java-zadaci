@@ -1,5 +1,17 @@
 package zadatak4;
 
+/**
+ * @author Denis.Selimovski
+ *
+ */
+
+/**
+ * Koriscenjem for petlje pronaci i ispisati ime studenta sa najvicem brojem poena na testu. Prvo
+ * se unosi broj studenata n, posle se n puta obilazi for petlja i unose ime i broj poena studenta.
+ * Zapamti onog sa najvecim brojem poena.
+ *
+ */
+
 public class Student {
 	
 	private String ime;

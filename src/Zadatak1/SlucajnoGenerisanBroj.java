@@ -1,5 +1,20 @@
 package Zadatak1;
 
+/**
+ * @author Denis.Selimovski
+ *
+ */
+
+/**
+ * Napistai program za pogadjanje slucajnog generisanog broja u opsegu od 1 do 50.
+ * Program treba da radi na sledeci nacin: Korisnik preko standardnog ulaza unosi jedan ceo broj.
+ * Broj koji treba pogoditi treba generisati u opsegu od 1 do 50 koristeci klasu Random.
+ * Posle toga ispisati taj trazeni broj na standardni izlaz i u zavisnosti od rezultata pogadjanja 
+ * ispisati odogvarajucu poruku. Ako je pogodjen tacan broj napisati: Neverovatno pogodili ste 
+ * tacan broj, ako je razlika izmedju brojeva 5 ili manja : Dobar pokusaj, bili ste jako blizu,
+ * i ako je razlika veca od 5 : Vise srece sledeci put.
+ */
+
 import java.util.Random;
 import java.util.Scanner;
 
