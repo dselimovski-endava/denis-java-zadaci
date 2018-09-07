@@ -6,7 +6,7 @@ package Zadatak3;
  */
 
 /**
- * Koriscenjem while petlje ispsiati sve parne broejve izmedju brojeva a i b koji se unose preko standardnog ulaza.
+ * Koriscenjem while petlje ispsiati sve parne broejve izmedju brojeva a i b koji se unose preko standardnog ulaza
  *
  */
 
