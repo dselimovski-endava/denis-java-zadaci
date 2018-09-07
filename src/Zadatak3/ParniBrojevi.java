@@ -1,5 +1,15 @@
 package Zadatak3;
 
+/**
+ * @author Denis.Selimovski
+ *
+ */
+
+/**
+ * Koriscenjem while petlje ispsiati sve parne broejve izmedju brojeva a i b koji se unose preko standardnog ulaza.
+ *
+ */
+
 import java.util.Scanner;
 
 public class ParniBrojevi {
