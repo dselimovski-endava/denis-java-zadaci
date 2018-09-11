@@ -22,9 +22,6 @@ public class Nizovi {
 	
 	public static void main(String[] args) {
 		
-		System.out.print("Unesite broj x: ");
-		x = unosBroja();
-		
 		do {
 			System.out.print("Unesite duzinu niza (najmanje 5):");
 			n = unosBroja();
@@ -37,26 +34,14 @@ public class Nizovi {
 			niz[i] = unosBroja();
 		}
 		
-		Arrays.sort(niz);
+		System.out.print("Unesite broj kako bi proverili da li se isti nalazi u nizu: ");
+		x = unosBroja();
 		
-		for (int clan : niz) {
-			if(clan == x) {
-				System.out.println(new StringBuilder("Niz sadrzi broj ").append(x));
-				nadjen = true;
-				break;
-			}
-		}
+		sortiraj(niz);
+		proveraBroja(x);
+		prikaziNiz(niz);
 		
-		if(!nadjen) {
-			System.out.println(new StringBuilder("Niz ne sadrzi broj ").append(x));
-		}
-		
-		System.out.println(new StringBuilder("CEO NIZ: ").append(Arrays.toString(niz)));
-		System.out.print("PRVIH 5 CLANOVA: ");
-		for (int i = 0; i < 5; i++) {
-			System.out.print(niz[i] + " ");
-		}
-		
+		ulaz.close();
 	}
 	
 	
@@ -66,6 +51,33 @@ public class Nizovi {
 			ulaz.next();
 		}
 		return ulaz.nextInt();
+	}
+	
+	public static void sortiraj(int[] niz) {
+		Arrays.sort(niz);
+	}
+	
+	public static void proveraBroja(int br) {
+		for (int clan : niz) {
+			if(clan == br) {
+				System.out.println(new StringBuilder("Niz sadrzi broj ").append(br));
+				nadjen = true;
+				break;
+			}
+		}
+		
+		if(!nadjen) {
+			System.out.println(new StringBuilder("Niz ne sadrzi broj ").append(br));
+		}
+	}
+	
+	public static void prikaziNiz(int[] niz) {
+		System.out.println(new StringBuilder("CEO NIZ: ").append(Arrays.toString(niz)));
+		
+		System.out.print("PRVIH 5 CLANOVA: ");
+		for (int i = 0; i < 5; i++) {
+			System.out.print(niz[i] + " ");
+		}
 	}
 	
 }
