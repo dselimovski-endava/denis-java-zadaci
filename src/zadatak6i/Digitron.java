@@ -48,8 +48,13 @@ public class Digitron {
 						break;
 						
 					case 'd':
-						deljenje(broj1, broj2);
-						break;
+						if(broj2 == 0.0) {
+							System.out.println("GRESKA - Delilac ne moze biti nula!!!");
+							break;
+						} else {
+							deljenje(broj1, broj2);
+							break;
+						}
 						
 					default:
 						System.out.println("Kod nije podrzan!!! --- KRAJ PROGRAMA ---");
@@ -58,6 +63,7 @@ public class Digitron {
 				}
 		}
 		ulaz.close();
+		
 	}
 
 	
