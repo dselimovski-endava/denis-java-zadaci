@@ -12,7 +12,7 @@ public abstract class GeometrijskaSlika {
 	
 	@Override
 	public String toString() {
-		return String.format("Geometrijski Oblik [Povrsina = %.2f, Obim = %.2f]", povrsina(), obim());
+		return String.format(this.getClass().getSimpleName() +  " [Povrsina = %.2f, Obim = %.2f]", povrsina(), obim());
 	}
 	
 }

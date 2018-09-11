@@ -29,12 +29,12 @@ public class Run {
 		GeometrijskaSlika pravougaonik = new Pravougaonik(2, 4);
 		GeometrijskaSlika nejednakostranicni = new NejednakostranicniTrougao(2, 3, 4);
 		
-		System.out.println(krug);
-		System.out.println(kvadrat);
-		System.out.println(trougao);
-		System.out.println(elipsa);
-		System.out.println(pravougaonik);
-		System.out.println(nejednakostranicni);
+		System.out.println(krug.toString());
+		System.out.println(kvadrat.toString());
+		System.out.println(trougao.toString());
+		System.out.println(elipsa.toString());
+		System.out.println(pravougaonik.toString());
+		System.out.println(nejednakostranicni.toString());
 		
 	}
 

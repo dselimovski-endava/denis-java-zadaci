@@ -44,7 +44,7 @@ public class Pravougaonik extends Kvadrat {
 
 	@Override
 	public String toString() {
-		return String.format("Pravougaonik [Povrsina = %.2f, Obim = %.2f]", povrsina(), obim());
+		return super.toString();
 	}
 	
 	

@@ -55,7 +55,7 @@ public class NejednakostranicniTrougao extends Trougao {
 
 	@Override
 	public String toString() {
-		return String.format("Nejednakostranicni trougao [Povrsina = %.2f, Obim = %.2f]", povrsina(), obim());
+		return super.toString();
 	}
 	
 	

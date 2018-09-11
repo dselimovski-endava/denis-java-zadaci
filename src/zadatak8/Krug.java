@@ -43,7 +43,7 @@ public class Krug extends GeometrijskaSlika {
 	
 	@Override
 	public String toString() {
-		return String.format("Krug [Povrsina = %.2f, Obim = %.2f]", povrsina(), obim());
+		return super.toString();
 	}
 
 

@@ -44,7 +44,7 @@ public class Elipsa extends Krug {
 
 	@Override
 	public String toString() {
-		return String.format("Elipsa [Povrsina = %.2f, Obim = %.2f]", povrsina(), obim());
+		return super.toString();
 	}
 	
 	

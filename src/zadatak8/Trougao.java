@@ -44,7 +44,7 @@ public class Trougao extends GeometrijskaSlika {
 
 	@Override
 	public String toString() {
-		return String.format("Trougao [Povrsina = %.2f, Obim = %.2f]", povrsina(), obim());
+		return super.toString();
 	}
 	
 	

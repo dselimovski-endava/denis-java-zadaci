@@ -43,7 +43,7 @@ public class Kvadrat extends GeometrijskaSlika {
 	
 	@Override
 	public String toString() {
-		return String.format("Kvadrat [Povrsina = %.2f, Obim = %.2f]", povrsina(), obim());
+		return super.toString();
 	}
 
 }
