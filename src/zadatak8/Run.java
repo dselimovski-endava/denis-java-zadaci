@@ -15,7 +15,7 @@ package zadatak8;
  * - Klasa Trougao definise jednakostranicni Trougao
  * - Obim elipse se racuna aPI(9-sqrt35)/2, a povrsina abPI
  * Napraviti Main klasu i u njoj kreirati instance klase Geometrijska slika i napraviti objekte svih osnovnih i 
- * izvedenih klasa sa proizvoljnim argumentima. Ispisati String reprezentaciju objekta - toString()
+ * izvedenih klasa sa proizvoljnim argumentima. Ispisati String reprezentaciju objekta - toString().
  */
 
 public class Run {
