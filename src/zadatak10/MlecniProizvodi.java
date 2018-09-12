@@ -1,5 +1,9 @@
 package zadatak10;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * @author Denis.Selimovski
  *
@@ -48,7 +52,22 @@ public class MlecniProizvodi extends Proizvod {
 
 	@Override
 	public double izracunajCenu() {
-		return VISA_STOPA_PDV*this.getCenaProizvoda() + this.getCenaProizvoda();
+		int danRoka = Integer.parseInt(this.getRokTrajanja().substring(0, 2));
+		int mesecRoka = Integer.parseInt(this.getRokTrajanja().substring(3, 5));
+		int godinaRoka = Integer.parseInt(this.getRokTrajanja().substring(6, 10));
+		
+		Date danasnjiDat = new Date(System.currentTimeMillis());
+		DateFormat formatDatuma = new SimpleDateFormat("yyyy/MM/dd");
+		String danasnjiDatum = formatDatuma.format(danasnjiDat).toString();
+		int trenutniDan = Integer.parseInt(danasnjiDatum.substring(8, 10));
+		int trenutniMesec = Integer.parseInt(danasnjiDatum.substring(5, 7));
+		int trenutnaGodina = Integer.parseInt(danasnjiDatum.substring(0, 4));
+		
+		if(5>=danRoka-trenutniDan && mesecRoka==trenutniMesec && godinaRoka==trenutnaGodina) {
+			return VISA_STOPA_PDV*(this.getCenaProizvoda()/2) + (this.getCenaProizvoda()/2);
+		}
+		else
+			return VISA_STOPA_PDV*this.getCenaProizvoda() + this.getCenaProizvoda();
 	}	
 	
 	
