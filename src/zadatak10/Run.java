@@ -9,7 +9,8 @@ package zadatak10;
  * Napisati program koji opisuje sledeci scenario:
  * Firma se bavi preprodajom prehrambenih proizvoda. Proizvode razlikujemo po sledecim kategorijama proizvoda:
  * 		- Mlecni proizvodi
- * 		- Kafe, Sokovi
+ * 		- Kafe
+ * 		- Sokovi
  * 		- Meso
  * O svim proizvodima cuvamo informacije: ime proizvoda, cena proizvoda i rok trajanja.
  * Kod mlecnih proizvoda cuvamo i poreklo mleka.
