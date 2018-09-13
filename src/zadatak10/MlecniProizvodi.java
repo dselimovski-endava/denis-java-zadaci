@@ -68,9 +68,6 @@ public class MlecniProizvodi extends Proizvod {
 		}
 		else
 			return VISA_STOPA_PDV*this.getCenaProizvoda() + this.getCenaProizvoda();
-	}	
-	
-	
-	
+	}
 	
 }

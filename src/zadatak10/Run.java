@@ -1,5 +1,7 @@
 package zadatak10;
 
+import java.util.ArrayList;
+
 /**
  * @author Denis.Selimovski
  *
@@ -18,6 +20,9 @@ package zadatak10;
  * O sokovima cuvamo od cega je sok.
  * Kod mesa cuvamo od koje zivotinje je meso.
  * Kod cene mlecnih proizvoda i sokova PDV je 20%, dok je za meso i kafu PDV na cenu 8%.
+ * Firma ima polje kapital, listu proizvoda i metodu porudzbina() koja izracuna, proverava da li ima
+ * dovoljno sredstava za porudzbinu na osnovu liste proizvoda. Nakon uspesne porudzbine lista ostaje 
+ * prazna.
  */
 
 public class Run {
@@ -33,12 +38,27 @@ public class Run {
 		Proizvod mesoAkcija = new Meso("Pilece belo", 449.50, "17.09.2018.", "piletina");
 		Proizvod kafa = new Kafe("Nescafe", 150, "30.12.2018.", TipKafe.SAMLEVENA);
 		
-		System.out.println(mleko.toString());
-		System.out.println(mlekoAkcija.toString());
-		System.out.println(sok.toString());
-		System.out.println(meso.toString());
-		System.out.println(mesoAkcija.toString());
-		System.out.println(kafa.toString());
+		ArrayList<Proizvod> lista1 = new ArrayList<>();
+		lista1.add(mleko);
+		lista1.add(mlekoAkcija);
+		lista1.add(sok);
+		lista1.add(meso);
+		lista1.add(mesoAkcija);
+		lista1.add(kafa);
+		
+		ArrayList<Proizvod> lista2 = new ArrayList<>();
+		lista2.add(mleko);
+		lista2.add(sok);
+		lista2.add(meso);
+		lista2.add(kafa);
+
+		Firma firma1 = new Firma(8000, lista1);
+		firma1.porudzbina();
+		
+		System.out.println();
+		
+		Firma firma2 = new Firma(500, lista2);
+		firma2.porudzbina();
 	}
 
 }
