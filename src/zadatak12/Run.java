@@ -33,10 +33,10 @@ public class Run {
 
 		do {
 			System.out.print("Unesite ime studenta: ");
-			String ime = unosImena();
+			String ime = ulaz.next();
 
 			System.out.print("Unesite broj poena studenta: ");
-			double brojPoena = unosPoena();
+			double brojPoena = ulaz.nextDouble();
 
 			Student student = new Student(ime, brojPoena);
 			listaStudenata.add(student);
@@ -50,34 +50,19 @@ public class Run {
 		Collections.sort(listaStudenata);
 
 		File fajl = new File("ocene.txt");
-		try {
-			PrintWriter pw = new PrintWriter(fajl);
+		try (PrintWriter pw = new PrintWriter(fajl)) {
 			for (Student student : listaStudenata) {
 				pw.println(student);
 			}
 			pw.close();
 			System.out.println("Podaci uspesno upisani u fajl...");
-		} catch (IOException ex) {
+		} catch (IOException e) {
+			System.out.println(e);
+		} catch (IllegalArgumentException ex) {
 			System.out.println(ex);
 		} finally {
 			System.out.println("--- KRAJ PROGRAMA ---");
 		}
 		ulaz.close();
-	}
-
-	public static String unosImena() {
-		while (!ulaz.hasNext("^[a-zA-Z]+[\\-'\\s]?[a-zA-Z ]+$")) {
-			System.out.print("Pogresan unos, unesite ime studenta: ");
-			ulaz.next();
-		}
-		return ulaz.next();
-	}
-
-	public static double unosPoena() {
-		while (!ulaz.hasNextDouble()) {
-			System.out.print("Pogresan unos, unesite broj poena: ");
-			ulaz.next();
-		}
-		return ulaz.nextDouble();
 	}
 }
