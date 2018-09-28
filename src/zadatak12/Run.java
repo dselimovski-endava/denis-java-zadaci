@@ -54,7 +54,6 @@ public class Run {
 			for (Student student : listaStudenata) {
 				pw.println(student);
 			}
-			pw.close();
 			System.out.println("Podaci uspesno upisani u fajl...");
 		} catch (IOException e) {
 			System.out.println(e);
@@ -63,5 +62,6 @@ public class Run {
 		} finally {
 			System.out.println("--- KRAJ PROGRAMA ---");
 		}
+		ulaz.close();
 	}
 }
