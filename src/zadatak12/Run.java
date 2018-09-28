@@ -63,6 +63,5 @@ public class Run {
 		} finally {
 			System.out.println("--- KRAJ PROGRAMA ---");
 		}
-		ulaz.close();
 	}
 }
