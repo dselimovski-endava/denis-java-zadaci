@@ -1,0 +1,5 @@
+Marijana 53.50
+Maja 53.55
+Ivana 99.50
+Matija 67.00
+Petar -10.00
